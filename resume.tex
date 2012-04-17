@@ -1,75 +1,141 @@
 \documentclass[a4paper,12pt]{letter}
 
-\usepackage[margin=0.7cm,vmargin=0.5cm]{geometry}
+\usepackage[margin=0.7cm,vmargin=0.7cm]{geometry}
+\usepackage{float}
 \usepackage{fontspec}
 \usepackage{xltxtra}
 \usepackage{setspace}
 
 \defaultfontfeatures{Ligatures={TeX}}
-\setmainfont{Adobe Caslon Pro}
+\setmainfont{Adobe Jenson Pro}
+\setsansfont{Futura Std}
 \singlespace
 
 \begin{document}
 \pagestyle{empty}
 
-\Large \textbf{Aram Dulyan}\\
-\vspace{-1.5mm}\small aram@dulyan.com\\
-\rule{\linewidth}{1mm}
+\huge \textbf{\textsf{Aram Dulyan}}\\
+\vspace{-1mm}\\
+\small aram@dulyan.com\\
+\rule[1mm]{\linewidth}{2mm}\\
+\vspace{-5.5mm}\\
+\begin{minipage}[t]{95mm}
+	\large{\textsc{\textbf{timeline}}}\\
+	\rule[3mm]{\linewidth}{1mm}
+	\vspace{-8mm}\\
+	\setlength{\unitlength}{1mm}
+	\begin{picture}(95, 79)
+		\multiput(2.5,77)(0,1){2}{\line(1, 0){2}}
+		\put(-6.5,74){\makebox[20mm]{\small \textsc{2012}}}
+		\multiput(2.5,72)(0,1){2}{\line(1, 0){2}}
+		\put(1.5,71){\line(1,0){4}}
+		\multiput(2.5,69)(0,1){2}{\line(1, 0){2}}
+		\put(-6.5,66){\makebox[20mm]{\small \textsc{2011}}}
+		\multiput(2.5,64)(0,1){2}{\line(1, 0){2}}
+		\put(1.5,63){\line(1,0){4}}
+		\multiput(2.5,61)(0,1){2}{\line(1, 0){2}}
+		\put(-6.5,58){\makebox[20mm]{\small \textsc{2010}}}
+		\multiput(2.5,56)(0,1){2}{\line(1, 0){2}}
+		\put(1.5,55){\line(1,0){4}}
+		\multiput(2.5,53)(0,1){2}{\line(1, 0){2}}
+		\put(-6.5,50){\makebox[20mm]{\small \textsc{2009}}}
+		\multiput(2.5,48)(0,1){2}{\line(1, 0){2}}
+		\put(1.5,47){\line(1,0){4}}
+		\multiput(2.5,45)(0,1){2}{\line(1, 0){2}}
+		\put(-6.5,42){\makebox[20mm]{\small \textsc{2008}}}
+		\multiput(2.5,40)(0,1){2}{\line(1, 0){2}}
+		\put(1.5,39){\line(1,0){4}}
+		\multiput(2.5,37)(0,1){2}{\line(1, 0){2}}
+		\put(-6.5,34){\makebox[20mm]{\small \textsc{2007}}}
+		\multiput(2.5,32)(0,1){2}{\line(1, 0){2}}
+		\put(1.5,31){\line(1,0){4}}
+		\multiput(2.5,29)(0,1){2}{\line(1, 0){2}}
+		\put(-6.5,26){\makebox[20mm]{\small \textsc{2006}}}
+		\multiput(2.5,24)(0,1){2}{\line(1, 0){2}}
+		\put(1.5,23){\line(1,0){4}}
+		\multiput(2.5,21)(0,1){2}{\line(1, 0){2}}
+		\put(-6.5,18){\makebox[20mm]{\small \textsc{2005}}}
+		\multiput(2.5,16)(0,1){2}{\line(1, 0){2}}
+		\put(1.5,15){\line(1,0){4}}
+		\multiput(2.5,13)(0,1){2}{\line(1, 0){2}}
+		\put(-6.5,10){\makebox[20mm]{\small \textsc{2004}}}
+		\multiput(2.5,8)(0,1){2}{\line(1, 0){2}}
+		\put(1.5,7){\line(1,0){4}}
+		\multiput(2.5,5)(0,1){2}{\line(1, 0){2}}
+		\put(-6.5,2){\makebox[20mm]{\small \textsc{2003}}}
+		\multiput(2.5,0)(0,1){2}{\line(1, 0){2}}
+		
+		\linethickness{2mm}
+		% Master's
+		\put(9.5,54){\line(0,-1){17}}
+		% Bachelor's
+		\put(9.5,30){\line(0,-1){29}}
+		% IxC
+		\put(9.5,77){\line(0,-1){21}}
+		
+		\put(12,74){\parbox[t]{83mm}{\normalsize%
+			\textbf{Senior Software Engineer}\\
+			\emph{The Interaction Consortium}\\
+			\small See ``projects'' below for details.
+		}}
+		
+		\put(12,51){\parbox[t]{83mm}{\normalsize%
+			\textbf{Master of Computing Science (by research)*}\\
+			\emph{University of Technology, Sydney}\\
+			\small *did not complete degree.
+		}}
+		
+		\put(12,27){\parbox[t]{83mm}{\normalsize%
+			\textbf{Bachelor of Computer Science with distinction}\\
+			\emph{Worcester Polytechnic Institute}\\
+			\small Minor in Social Sciences.\\Dean's scholarship
+		}}
+	\end{picture}
+	\rule[3mm]{\linewidth}{1mm}
+	\vspace{-11mm}\\
+	\large{\textsc{\textbf{projects}}}\\
+	\rule[3mm]{\linewidth}{1mm}
 
-\vspace{-3mm}
-\emph{\textsc{\normalsize education\hfill experience}}
-\begin{center}
-\vspace{-10mm}
-\setlength{\unitlength}{1mm}
-\begin{picture}(200, 77)
-	\multiput(98,77)(0,1){2}{\line(1, 0){2}}
-	\put(89,74){\makebox[20mm]{\small \textsc{2012}}}
-	\multiput(98,72)(0,1){2}{\line(1, 0){2}}
-	\put(97,71){\line(1,0){4}}
-	\multiput(98,69)(0,1){2}{\line(1, 0){2}}
-	\put(89,66){\makebox[20mm]{\small \textsc{2011}}}
-	\multiput(98,64)(0,1){2}{\line(1, 0){2}}
-	\put(97,63){\line(1,0){4}}
-	\multiput(98,61)(0,1){2}{\line(1, 0){2}}
-	\put(89,58){\makebox[20mm]{\small \textsc{2010}}}
-	\multiput(98,56)(0,1){2}{\line(1, 0){2}}
-	\put(97,55){\line(1,0){4}}
-	\multiput(98,53)(0,1){2}{\line(1, 0){2}}
-	\put(89,50){\makebox[20mm]{\small \textsc{2009}}}
-	\multiput(98,48)(0,1){2}{\line(1, 0){2}}
-	\put(97,47){\line(1,0){4}}
-	\multiput(98,45)(0,1){2}{\line(1, 0){2}}
-	\put(89,42){\makebox[20mm]{\small \textsc{2008}}}
-	\multiput(98,40)(0,1){2}{\line(1, 0){2}}
-	\put(97,39){\line(1,0){4}}
-	\multiput(98,37)(0,1){2}{\line(1, 0){2}}
-	\put(89,34){\makebox[20mm]{\small \textsc{2007}}}
-	\multiput(98,32)(0,1){2}{\line(1, 0){2}}
-	\put(97,31){\line(1,0){4}}
-	\multiput(98,29)(0,1){2}{\line(1, 0){2}}
-	\put(89,26){\makebox[20mm]{\small \textsc{2006}}}
-	\multiput(98,24)(0,1){2}{\line(1, 0){2}}
-	\put(97,23){\line(1,0){4}}
-	\multiput(98,21)(0,1){2}{\line(1, 0){2}}
-	\put(89,18){\makebox[20mm]{\small \textsc{2005}}}
-	\multiput(98,16)(0,1){2}{\line(1, 0){2}}
-	\put(97,15){\line(1,0){4}}
-	\multiput(98,13)(0,1){2}{\line(1, 0){2}}
-	\put(89,10){\makebox[20mm]{\small \textsc{2004}}}
-	\multiput(98,8)(0,1){2}{\line(1, 0){2}}
-	\put(97,7){\line(1,0){4}}
-	\multiput(98,5)(0,1){2}{\line(1, 0){2}}
-	\put(89,2){\makebox[20mm]{\small \textsc{2003}}}
-	\multiput(98,0)(0,1){2}{\line(1, 0){2}}
+\end{minipage}%
+\hspace{5mm}
+\begin{minipage}[t]{95mm}
+	\large{\textsc{\textbf{skills}}}\\
+	\rule[3mm]{\linewidth}{1mm}
 	
-	\linethickness{1.5mm}
-	% Master's
-	\put(93,54){\line(0,-1){17}}
-	% Bachelor's
-	\put(93,30){\line(0,-1){29}}
-	% IxC
-	\put(105,77){\line(0,-1){21}}
-\end{picture}
-\end{center}
+	\vspace{-2mm}
+	\large{\textsc{expert}}\par
+	\rule[4mm]{\linewidth}{0.25mm}\\
+	\vspace{-12mm}
 
+	\LARGE{Python, Django}
+	
+	\vspace{2mm}
+	\large{\textsc{advanced}}\par
+	\rule[4mm]{\linewidth}{0.25mm}\\
+	\vspace{-11.5mm}
+	
+	\Large{JavaScript, HTML/CSS, PostgreSQL}
+	
+	\vspace{2mm}
+	\large{\textsc{intermediate}}\par
+	\rule[4mm]{\linewidth}{0.25mm}\\
+	\vspace{-10.5mm}
+	
+	\large{Java, Android SDK, ActionScript 3, \LaTeX{}}
+	
+	\vspace{2mm}
+	\large{\textsc{basic}}\par
+	\rule[4mm]{\linewidth}{0.25mm}\\
+	\vspace{-10mm}
+	
+	\normalsize{C++, PHP, MongoDB}
+	
+	\vspace{4mm}
+	\rule[3mm]{\linewidth}{1mm}
+	\vspace{-11mm}\\
+	\large{\textsc{\textbf{open-source contributions}}}\\
+	\rule[3mm]{\linewidth}{1mm}
+	
+	
+\end{minipage}
 \end{document}
