@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{letter}
+\documentclass[a4paper,12pt]{article}
 
 \usepackage[margin=0.7cm,vmargin=0.7cm]{geometry}
 \usepackage{float}
@@ -9,16 +9,37 @@
 \defaultfontfeatures{Ligatures={TeX}}
 \setmainfont[BoldFont={* Bold}]{Adobe Jenson Pro}
 \setsansfont[BoldFont={* Bold}]{Futura Std}
+\newfontfamily\condensed{Adobe Caslon Pro}
 \singlespace
+\setlength{\parindent}{0mm}
 
-\begin{document}
-\pagestyle{empty}
+\begin{document}%
+\begin{spacing}{0.95}%
+\pagestyle{empty}%
+\begin{minipage}[b]{50mm}%
+	\noindent{\LARGE\textbf{\textsf{Aram Dulyan}}}%
+\end{minipage}%
+\begin{minipage}[t]{45mm}%
+	\vspace{-5mm}\begin{spacing}{0.8}\begin{flushright}{\small\textbf{\textsc{%
+		email:\\
+		phone:\\
+		stack overflow:\\
+		github:%
+	}}}\end{flushright}\end{spacing}%
+\end{minipage}%
+\hspace{5mm}%
+\begin{minipage}[t]{60mm}%
+	\vspace{-6mm}\begin{spacing}{0.765}{\small%
+		aram@dulyan.com\\
+		+61 432 09 79 49\\
+		aram.dulyan.com/stack\_overflow\\
+		aram.dulyan.com/github%
+	}\end{spacing}%
+\end{minipage}\\
+\vspace{-4mm}
 
-{\LARGE\textbf{\textsf{Aram Dulyan}}}
-
-{\small aram@dulyan.com}\\
 \rule[1mm]{\linewidth}{2mm}\\
-\begin{minipage}[t]{95mm}
+\begin{minipage}[t]{95.5mm}
 	{\Large\textsc{\textbf{timeline}}}\\
 	\rule[1mm]{\linewidth}{1mm}
 	
@@ -73,8 +94,8 @@
 		% IxC
 		\put(9.5,77){\line(0,-1){21}}
 		
-		\put(12,74){\parbox[t]{83mm}{\normalsize%
-			\textbf{Senior Software Engineer}\\
+		\put(12,74){\parbox[t]{83mm}{\small%
+			\textsf{\textbf{Senior Software Engineer}}\\
 			\emph{The Interaction Consortium}\\
 			\small See ``projects'' below for details.
 		}}
@@ -98,8 +119,8 @@
 	\rule[1mm]{\linewidth}{1mm}
 
 \end{minipage}%
-\hspace{5mm}
-\begin{minipage}[t]{95mm}
+\hspace{5mm}%
+\begin{minipage}[t]{95.5mm}
 	{\Large{\textsc{\textbf{skills}}}}\\
 	\vspace{1mm}%
 	\rule[1mm]{\linewidth}{1mm}
@@ -117,13 +138,13 @@
 	\\
 	
 	{\large\textsc{intermediate}}\\
-	\vspace{-2.6mm}%
+	\vspace{-2.7mm}%
 	\rule[3mm]{\linewidth}{0.25mm}\\	
 	{\large Java, Android SDK, ActionScript 3, \LaTeX{}}
 	\\
 	
 	{\large\textsc{basic}}\\
-	\vspace{-3.1mm}%
+	\vspace{-3.2mm}%
 	\rule[3mm]{\linewidth}{0.25mm}\\
 	{\normalsize C++, PHP, MongoDB}
 	
@@ -133,7 +154,7 @@
 	\vspace{1mm}%
 	\rule[1mm]{\linewidth}{1mm}
 	
-	\begin{minipage}[t]{44.5mm}
+	\begin{minipage}[t]{45.25mm}
 		{\large\textsc{major}}\\
 		\vspace{-3.1mm}%
 		\rule[3mm]{\linewidth}{0.25mm}
@@ -141,10 +162,11 @@
 		{\normalsize
 		glamkit-eventtools\\
 		glamkit-feincmstools\\
-		glamkit-comet}
+		glamkit-comet\\
+		html2textile}
 	\end{minipage}%
-	\hspace{5mm}
-	\begin{minipage}[t]{44.5mm}
+	\hspace{5mm}%
+	\begin{minipage}[t]{45.25mm}
 		{\large\textsc{minor}}\\
 		\vspace{-3.1mm}%
 		\rule[3mm]{\linewidth}{0.25mm}
@@ -160,21 +182,61 @@
 	\vspace{4mm}
 	\rule[1mm]{\linewidth}{1mm}
 	{\Large\textsc{\textbf{other endeavours}}}\\
-	\vspace{2mm}%
+	\vspace{2.5mm}%
 	\rule[1mm]{\linewidth}{1mm}
 	
 	{\small
-	\textbf{\textsf{spoken languages}} $-$ English (native), Russian (native), Armenian (native), Czech (fluent), French (basic).
+	\textbf{\textsf{spoken languages}} -- English (native), Russian (native), Armenian (native), Czech (fluent), French (basic).
 	
 	\vspace{3mm}
-	\textbf{\textsf{interactive art}} $-$ Technical manager of the \emph{beta\_space} exhibition at the Powerhouse Museum (2007-10). Lead technician at New Media Curation, assisting with the installation of countless new media artworks (2007-11). Exhibited own work at the Powerhouse Museum in 2008.
+	\textbf{\textsf{interactive art}} -- Technical manager of the \emph{beta\_space} exhibition at the Powerhouse Museum (2007-10). Lead technician at New Media Curation, assisting with the development and installation of  new media artworks (2007-11). Exhibited own work at the Powerhouse Museum in 2008.
 	
 	\vspace{3mm}
-	\textbf{\textsf{photography}} $-$ Professional event photography for X|Media Lab, AusGrid and New Media Curation.
+	\textbf{\textsf{photography}} -- Professional event photography for X|Media Lab, AusGrid and New Media Curation.
 	
 	\vspace{3mm}
-	\textbf{\textsf{fitness}} $-$ Half-marathon (2011), Oxfam Trailwalker: 100km in 48 hours (2011), Cole Classic 2km swim (2012), Warrior Dash mud run (2012). Currently training for full marathon and the Tough Mudder mud run in spring of 2012.}
+	\textbf{\textsf{fitness}} --- Half-marathon (2011), Oxfam Trailwalker: 100km in 48 hours (2011), Cole Classic 2km swim (2012), Warrior Dash mud run (2012). Currently training for full marathon and the Tough Mudder mud run in spring of 2012.%
+	}%
+\end{minipage}\\
+\vspace{2mm}
+
+\rule[1mm]{\linewidth}{1mm}\\
+{\Large\textsc{\textbf{references}}}\\
+\rule[1mm]{\linewidth}{1mm}
+
+\vspace{2mm}
+\begin{minipage}[t]{45mm}
+	{\small%
+		\textbf{\textsf{Greg Turner}}\\
+		{\footnotesize{\condensed greg@interaction.net.au}}\\
+		Director of the Interaction Consortium and direct supervisor.%
+	}%
+\end{minipage}%
+\hspace{5mm}%
+\begin{minipage}[t]{45mm}
+	{\small%
+		\textbf{\textsf{Alastair Weakley}}\\
+		{\footnotesize{\condensed alastair@interaction.net.au}}\\
+		Director of the Interaction Consortium and direct supervisor.%
+	}%
+\end{minipage}%
+\hspace{5mm}%
+\begin{minipage}[t]{45mm}
+	{\small%
+		\textbf{\textsf{Simon Meers}}\\
+		{\footnotesize{\condensed meers@simonmeers.com}}\\
+		Colleague at the Interaction Consortium and Django core developer.%
+	}%
+\end{minipage}%
+\hspace{5mm}%
+\begin{minipage}[t]{45mm}
+	{\small%
+		\textsf{\textbf{Deborah Turnbull}}\\
+		{\footnotesize{\condensed deborah@newmediacuration.com}}\\
+		Director of New Media Curation and close personal friend.%
+	}%
 \end{minipage}
+\end{spacing}
 \end{document}
 
 
