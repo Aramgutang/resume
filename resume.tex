@@ -7,22 +7,22 @@
 \usepackage{setspace}
 
 \defaultfontfeatures{Ligatures={TeX}}
-\setmainfont{Adobe Jenson Pro}
-\setsansfont{Futura Std}
+\setmainfont[BoldFont={* Bold}]{Adobe Jenson Pro}
+\setsansfont[BoldFont={* Bold}]{Futura Std}
 \singlespace
 
 \begin{document}
 \pagestyle{empty}
 
-\huge \textbf{\textsf{Aram Dulyan}}\\
-\vspace{-1mm}\\
-\small aram@dulyan.com\\
+{\LARGE\textbf{\textsf{Aram Dulyan}}}
+
+{\small aram@dulyan.com}\\
 \rule[1mm]{\linewidth}{2mm}\\
-\vspace{-5.5mm}\\
 \begin{minipage}[t]{95mm}
-	\large{\textsc{\textbf{timeline}}}\\
-	\rule[3mm]{\linewidth}{1mm}
-	\vspace{-8mm}\\
+	{\Large\textsc{\textbf{timeline}}}\\
+	\rule[1mm]{\linewidth}{1mm}
+	
+	\vspace{3mm}
 	\setlength{\unitlength}{1mm}
 	\begin{picture}(95, 79)
 		\multiput(2.5,77)(0,1){2}{\line(1, 0){2}}
@@ -91,51 +91,90 @@
 			\small Minor in Social Sciences.\\Dean's scholarship
 		}}
 	\end{picture}
-	\rule[3mm]{\linewidth}{1mm}
-	\vspace{-11mm}\\
-	\large{\textsc{\textbf{projects}}}\\
-	\rule[3mm]{\linewidth}{1mm}
+	
+	\vspace{3mm}
+	\rule[1mm]{\linewidth}{1mm}\\
+	{\Large\textsc{\textbf{projects}}}\\
+	\rule[1mm]{\linewidth}{1mm}
 
 \end{minipage}%
 \hspace{5mm}
 \begin{minipage}[t]{95mm}
-	\large{\textsc{\textbf{skills}}}\\
-	\rule[3mm]{\linewidth}{1mm}
+	{\Large{\textsc{\textbf{skills}}}}\\
+	\vspace{1mm}%
+	\rule[1mm]{\linewidth}{1mm}
 	
-	\vspace{-2mm}
-	\large{\textsc{expert}}\par
-	\rule[4mm]{\linewidth}{0.25mm}\\
-	\vspace{-12mm}
+	{\large\textsc{expert}}\\
+	\vspace{-2mm}%
+	\rule[3mm]{\linewidth}{0.25mm}\\
+	{\LARGE Python, Django}
+	\\
+	
+	{\large\textsc{advanced}}\\
+	\vspace{-2.1mm}%
+	\rule[3mm]{\linewidth}{0.25mm}\\
+	{\Large JavaScript, HTML/CSS, PostgreSQL}
+	\\
+	
+	{\large\textsc{intermediate}}\\
+	\vspace{-2.6mm}%
+	\rule[3mm]{\linewidth}{0.25mm}\\	
+	{\large Java, Android SDK, ActionScript 3, \LaTeX{}}
+	\\
+	
+	{\large\textsc{basic}}\\
+	\vspace{-3.1mm}%
+	\rule[3mm]{\linewidth}{0.25mm}\\
+	{\normalsize C++, PHP, MongoDB}
+	
+	\vspace{3mm}
+	\rule[1mm]{\linewidth}{1mm}\\
+	{\Large\textsc{\textbf{open-source contributions}}}\\
+	\vspace{1mm}%
+	\rule[1mm]{\linewidth}{1mm}
+	
+	\begin{minipage}[t]{44.5mm}
+		{\large\textsc{major}}\\
+		\vspace{-3.1mm}%
+		\rule[3mm]{\linewidth}{0.25mm}
+				
+		{\normalsize
+		glamkit-eventtools\\
+		glamkit-feincmstools\\
+		glamkit-comet}
+	\end{minipage}%
+	\hspace{5mm}
+	\begin{minipage}[t]{44.5mm}
+		{\large\textsc{minor}}\\
+		\vspace{-3.1mm}%
+		\rule[3mm]{\linewidth}{0.25mm}
+		
+		{\normalsize
+		django\\
+		django-south\\
+		django-haystack\\
+		django-tastypie\\
+		python-requests}
+	\end{minipage}
 
-	\LARGE{Python, Django}
-	
-	\vspace{2mm}
-	\large{\textsc{advanced}}\par
-	\rule[4mm]{\linewidth}{0.25mm}\\
-	\vspace{-11.5mm}
-	
-	\Large{JavaScript, HTML/CSS, PostgreSQL}
-	
-	\vspace{2mm}
-	\large{\textsc{intermediate}}\par
-	\rule[4mm]{\linewidth}{0.25mm}\\
-	\vspace{-10.5mm}
-	
-	\large{Java, Android SDK, ActionScript 3, \LaTeX{}}
-	
-	\vspace{2mm}
-	\large{\textsc{basic}}\par
-	\rule[4mm]{\linewidth}{0.25mm}\\
-	\vspace{-10mm}
-	
-	\normalsize{C++, PHP, MongoDB}
-	
 	\vspace{4mm}
-	\rule[3mm]{\linewidth}{1mm}
-	\vspace{-11mm}\\
-	\large{\textsc{\textbf{open-source contributions}}}\\
-	\rule[3mm]{\linewidth}{1mm}
+	\rule[1mm]{\linewidth}{1mm}
+	{\Large\textsc{\textbf{other endeavours}}}\\
+	\vspace{2mm}%
+	\rule[1mm]{\linewidth}{1mm}
 	
+	{\small
+	\textbf{\textsf{spoken languages}} $-$ English (native), Russian (native), Armenian (native), Czech (fluent), French (basic).
 	
+	\vspace{3mm}
+	\textbf{\textsf{interactive art}} $-$ Technical manager of the \emph{beta\_space} exhibition at the Powerhouse Museum (2007-10). Lead technician at New Media Curation, assisting with the installation of countless new media artworks (2007-11). Exhibited own work at the Powerhouse Museum in 2008.
+	
+	\vspace{3mm}
+	\textbf{\textsf{photography}} $-$ Professional event photography for X|Media Lab, AusGrid and New Media Curation.
+	
+	\vspace{3mm}
+	\textbf{\textsf{fitness}} $-$ Half-marathon (2011), Oxfam Trailwalker: 100km in 48 hours (2011), Cole Classic 2km swim (2012), Warrior Dash mud run (2012). Currently training for full marathon and the Tough Mudder mud run in spring of 2012.}
 \end{minipage}
 \end{document}
+
+
